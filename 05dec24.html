@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счёт</title>
+
+</head>
+<body>
+</body>
+<script>
+let money = 123435;
+let gramms = 876452;
+let seconds = 503826;
+let rubls = 12.78;
+
+tonns = 7;
+kgs = 34;
+grammchiki = 15;
+
+sutok = 15;
+chasov = 7;
+minut = 43;
+secund = 5;
+
+document.write(''+ (Math.floor(money / 100)) + ' ' + 'рублей ' + (money % 100) + ' ' + 'копеек' + '<br>');
+
+document.write(''+ (Math.floor(gramms / 1000)) + ' ' + 'килограмм ' + (gramms % 1000) + ' ' + 'грамм' + '<br>');
+
+document.write(''+ (Math.floor(seconds / 3600)) + 'часов ' + (Math.floor((seconds/60)%60)) + 'минут ' + (Math.floor(seconds%60)) + 'секунд' + '<br>');
+
+document.write((rubls*100) + " " + 'копеек' + '<br>');
+
+document.write(((tonns * 1000) + (kgs * 100) + grammchiki) + ' грамм' + '<br>');
+
+document.write(( ((((sutok * 24 + chasov)*60) + minut) * 60) + secund) + ' ' + 'секунд' + '<br>');
+    </script>
+</html>
